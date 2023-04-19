@@ -1,0 +1,46 @@
+\ProvidesPackage{adb}
+
+% Latex plots
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+
+% Mathbb
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\F}{\ensuremath{\mathbb{F}}}
+\newcommand{\A}{\ensuremath{\mathbb{A}}} % Algebraic integers in Marcus
+\renewcommand{\P}{\ensuremath{\mathbb{P}}} % Probability measure
+\newcommand{\E}{\ensuremath{\mathbb{E}}} % Expectation
+
+% Mathcal
+\newcommand{\PP}{\ensuremath{\mathcal{P}}} % Ideal
+\newcommand{\OO}{\ensuremath{\mathcal{O}}} % Ring of integers / orders
+\newcommand{\QQ}{\ensuremath{\mathcal{Q}}} % Ideal
+\newcommand{\DD}{\ensuremath{\mathcal{D}}} % Different ideal
+
+% Text
+\newcommand{\Gal}{\ensuremath{\text{Gal}}}
+\newcommand{\GL}{\ensuremath{\text{GL}}}
+
+% <#1>
+\newcommand{\ang}[1]{\ensuremath{\langle #1 \rangle}}
+
+% Legendre
+\newcommand{\legendre}[2]{\ensuremath{\left( \frac{#1}{#2} \right) }}
+\newcommand{\f}[2]{\ensuremath{\frac{#1}{#2}}} % frac
+\newcommand{\s}[1]{\ensuremath{\sqrt{#1}}}
+
+
+
+% exercise environment
+% \begin{ex}{#chapter_num}{#exercise_num}
+\newenvironment{ex}[2]{\par
+\normalfont \topsep6\p@\@plus6\p@\relax
+\trivlist
+\item[\hskip\labelsep
+      \bfseries
+  #2\@addpunct{.}]\hypertarget{ex:#1.#2}{}\ignorespaces
+}{}
