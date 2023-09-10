@@ -135,3 +135,4 @@ unset __conda_setup
 
 
 export PATH=$PATH:/usr/local/go/bin
+. "$HOME/.cargo/env"

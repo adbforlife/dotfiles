@@ -1,8 +1,9 @@
 \ProvidesPackage{adb}
 
-% Latex plots
-\RequirePackage{tikz}
-\RequirePackage{pgfplots}
+\RequirePackage{tikz} % Latex graphics
+\RequirePackage{pgfplots} % Plots
+\RequirePackage{xspace}
+
 
 % Mathbb
 \newcommand{\C}{\ensuremath{\mathbb{C}}}
@@ -14,12 +15,19 @@
 \newcommand{\A}{\ensuremath{\mathbb{A}}} % Algebraic integers in Marcus
 \renewcommand{\P}{\ensuremath{\mathbb{P}}} % Probability measure
 \newcommand{\E}{\ensuremath{\mathbb{E}}} % Expectation
+\newcommand{\T}{\ensuremath{\mathbb{T}}} % Torus 
 
 % Mathcal
 \newcommand{\PP}{\ensuremath{\mathcal{P}}} % Ideal
 \newcommand{\OO}{\ensuremath{\mathcal{O}}} % Ring of integers / orders
 \newcommand{\QQ}{\ensuremath{\mathcal{Q}}} % Ideal
 \newcommand{\DD}{\ensuremath{\mathcal{D}}} % Different ideal
+\newcommand{\II}{\ensuremath{\mathcal{I}}} % Fractional ideal
+\newcommand{\JJ}{\ensuremath{\mathcal{J}}} % Fractional ideal
+\newcommand{\LL}{\ensuremath{\mathcal{L}}} % Laplace transform, etc.
+
+% Mathfrak
+\newcommand{\qq}{\ensuremath{\mathfrak{q}}} % Ideal
 
 % Text
 \newcommand{\Gal}{\ensuremath{\text{Gal}}}
@@ -44,3 +52,14 @@
       \bfseries
   #2\@addpunct{.}]\hypertarget{ex:#1.#2}{}\ignorespaces
 }{}
+
+
+% --------------------------------
+% terms I personally use in papers
+% --------------------------------
+\newcommand\LWE{\textup{\textsf{LWE}}\xspace}
+\newcommand\RLWE{\textup{\textsf{RLWE}}\xspace}
+\newcommand\NP{\textup{\textsf{NP}}\xspace}
+\newcommand\PCOMP{\textup{\textsf{P}}\xspace} % Complexity class P
+\newcommand\coNP{\textup{\textsf{coNP}}\xspace}
+
